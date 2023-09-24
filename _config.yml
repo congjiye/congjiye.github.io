@@ -15,7 +15,7 @@ timezone: 'Asia/Shanghai'
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://congjiye.github.io/
 root: /
-permalink: posts/:abbrlink.html
+permalink: :category/:title/
 abbrlink:
   alg: crc16
   rep: dec
