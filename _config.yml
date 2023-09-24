@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 丛继晔的BLOG
-subtitle: ''
-description: ''
+title: CongJiYe
+subtitle: 'Never Give UP'
+description: '学而不思则罔，思而不学则怠'
 keywords: Java
-author: congjiye
+author: 丛继晔
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -101,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -109,3 +109,35 @@ deploy:
   type: git
   repo: git@github.com:congjiye/congjiye.github.io.git
   branch: main
+
+# hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# hexo-word-counter
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  wpm: 300
+  suffix: "mins."
+
+# hexo-generator-feed
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
