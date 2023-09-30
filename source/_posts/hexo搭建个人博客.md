@@ -1,13 +1,16 @@
 ---
 title: Hexo + NexT + Github Pages搭建博客
 date: 2023-09-24 13:50:47
-tags: hexo
+tags: 
+  - hexo
 category: 工具
 ---
 
-## 前言
+## 介绍
 
-> 使用 Hexo + NexT + Github Pages 搭建个人博客。
+hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+
+本文采用 Hexo + NexT + Github Pages 搭建个人博客。
 
 <!-- more -->
 
