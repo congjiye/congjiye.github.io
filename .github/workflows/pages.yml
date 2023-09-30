@@ -12,12 +12,12 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: "16.20.2"
+          node-version: 18
       - name: Cache NPM dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: node_modules
           key: ${{ runner.OS }}-npm-cache
@@ -25,5 +25,8 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: npm install
-      - name: Package
+      - name: Deploy
+        env:
+          GIT_NAME: congjiye
+          GIT_EMAIL: congjiye@outlook.com
         run: npm run package
