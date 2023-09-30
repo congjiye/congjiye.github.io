@@ -1,6 +1,22 @@
-# blog
-使用 github issue 记录个人随笔博客
+# BLOG
+
+个人博客源码存放地址，使用如下技术栈搭建
+
+- Hexo
+- NexT
+- Github Pages
+
+## 主页
+
+[博客地址](congjiye.github.io)
+
+![主页展示](./assets/index.png)
 
 ## TODO
 
-- [ ] 编写主页面显示博客内容
+- [X] 支持评论功能
+- [X] 自定义 404 页面
+- [X] 支持关联文章
+- [ ] 使用 github actions 自动部署
+- [ ] 使用 cloudflare 加速国内访问
+- [ ] 自定义域名

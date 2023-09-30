@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
@@ -29,5 +30,8 @@
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-next": "^8.18.1",
     "hexo-word-counter": "^0.1.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
   }
 }

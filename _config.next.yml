@@ -371,9 +371,9 @@ codeblock:
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
-    style:
+    style: flat
   # Fold code block
   fold:
     enable: false
@@ -388,7 +388,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: left | right
   start_at: left
   # Available values: top | bottom
@@ -734,12 +734,12 @@ gitalk:
 # Utterances
 # For more information: https://utteranc.es
 utterances:
-  enable: false
-  repo: user-name/repo-name # Github repository owner and name
+  enable: true
+  repo: congjiye/blog # Github repository owner and name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  theme: github-light
+  theme: preferred-color-scheme
 
 # Isso
 # For more information: https://isso-comments.de
@@ -757,6 +757,7 @@ addtoany:
   buttons:
     - facebook
     - twitter
+    - wechat
 
 
 # ---------------------------------------------------------------
