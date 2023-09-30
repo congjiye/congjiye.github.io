@@ -6,10 +6,4 @@ comments: false
 
 # About Me
 
-```shell
-echo "Hello World"
-```
-
-```js
-console.log("Hello World")
-```
+我没有火箭！！！！！！
