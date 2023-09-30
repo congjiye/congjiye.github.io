@@ -14,12 +14,14 @@ hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 
 <!-- more -->
 
-## 安装 Hexo 
-
-前置条件：
+## 前置条件
 
 - 安装 NodeJS
 - 安装 Git
+
+## 安装 Hexo
+
+确认[前置条件](#前置条件)已经全部满足后执行如下命令
 
 ```shell
 npm install -g hexo-cli
@@ -33,7 +35,7 @@ pnpm i # 使用 npm install 可能会遇到 link 问题，建议直接使用 pnp
 进入先前创建的 hexo 目录中，执行如下命令
 
 ```shell
-pnpm add hexo-theme-next
+pnpm add hexo-theme-next@latest
 ```
 
 修改根目录下的 `_config.yml` 文件，将 theme 修改为 next
