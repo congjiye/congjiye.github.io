@@ -5,7 +5,11 @@ tags: macos
 category: 工具
 ---
 
-# MacOS 安装 NVM
+## 前言
+
+node 版本管理器，也就是说：一个 nvm 可以管理多个 node 版本（包含 npm 与 npx），可以方便快捷的 安装、切换不同版本的 node。
+
+<!-- more -->
 
 ## 下载 NVM
 

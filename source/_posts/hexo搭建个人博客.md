@@ -5,11 +5,11 @@ tags: hexo
 category: 工具
 ---
 
+## 前言
+
 > 使用 Hexo + NexT + Github Pages 搭建个人博客。
 
 <!-- more -->
-
-# Hexo + NexT + Github Pages搭建个人博客
 
 ## 安装 Hexo 
 

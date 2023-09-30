@@ -5,13 +5,11 @@ tags: macos
 category: 工具
 ---
 
-MacOS 安装 HomeBrew（国内源安装）
-
-<!-- more -->
-
-## 介绍
+## 前言
 
 [HomeBrew](https://brew.sh) 是一个 mac 平台上的终端管理工具，用户可以通过使用 `brew` 命令来安装/管理 mac 平台上的各种软件。
+
+<!-- more -->
 
 ## 安装
 
