@@ -1,7 +1,8 @@
 ---
 title: 安装HomeBrew
 date: 2023-09-26 23:26:06
-tags: macos
+tags: 
+  - macos
 category: 工具
 ---
 

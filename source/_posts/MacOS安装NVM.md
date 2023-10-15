@@ -1,7 +1,8 @@
 ---
 title: MacOS安装NVM
 date: 2023-09-26 23:33:38
-tags: macos
+tags: 
+  - macos
 category: 工具
 ---
 
