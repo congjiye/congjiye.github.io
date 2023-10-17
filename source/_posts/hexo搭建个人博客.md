@@ -23,7 +23,7 @@ hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 
 确认[前置条件](#前置条件)已经全部满足后执行如下命令
 
-```shell
+```bash
 npm install -g hexo-cli
 hexo init <your-project-name>
 cd <your-project-name>
@@ -34,7 +34,7 @@ pnpm i # 使用 npm install 可能会遇到 link 问题，建议直接使用 pnp
 
 进入先前创建的 hexo 目录中，执行如下命令
 
-```shell
+```bash
 pnpm add hexo-theme-next@latest
 ```
 
@@ -51,7 +51,7 @@ theme: next # 修改主题为 next
 
 安装一键部署工具 `hexo-deployer-git`
 
-```shell
+```bash
 pnpm add hexo-deployer-git
 ```
 
@@ -68,7 +68,7 @@ deploy:
 
 运行如下命令即可直接部署 hexo 到个人博客中
 
-```shell
+```bash
 hexo clean
 hexo g
 hexo s

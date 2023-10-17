@@ -14,7 +14,7 @@ category: 工具
 
 ## 安装
 
-```shell
+```bash
 # 官网安装
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -26,7 +26,7 @@ category: 工具
 
 ## 卸载
 
-```shell
+```bash
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)"
 ```
 

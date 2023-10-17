@@ -14,7 +14,7 @@ node 版本管理器，也就是说：一个 nvm 可以管理多个 node 版本�
 
 ## 下载 NVM
 
-```shell
+```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
 
@@ -22,14 +22,14 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 在 `.bash_profile` 中添加如下配置
 
-```shell
+```bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
 在 `.zshrc` 文件中添加如下配置
 
-```shell
+```bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
@@ -39,14 +39,14 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 配置 `nvm` 镜像地址为淘宝镜像
 
-```shell
+```bash
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
 export NVM_IOJS_ORG_MIRROR=http://npm.taobao.org/mirrors/iojs
 ```
 
 执行如下命令让配置生效
 
-```shell
+```bash
 source ~/.bash_profile
 souece ~/.zshrc
 ```
@@ -55,6 +55,6 @@ souece ~/.zshrc
 
 执行如下命令查看是否成功安装 `nvm`
 
-```shell
+```bash
 ➜  ~ nvm -v
 ```
