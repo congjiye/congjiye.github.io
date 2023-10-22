@@ -37,34 +37,34 @@ JSON schema 是对 JSON 文件结构进行校验的一种工具，可以理解�
 
 ### number
 
-| 关键字              | 描述    | Schema 有效值                                              | json 数据验证                |
-|------------------|-------|---------------------------------------------------------|--------------------------|
-| multipleOf       | 整数倍   | 大于 0 的 JSON 数                                           | 当 JSON 实例的值是其整数倍的时候，通过验证 | 
-| maximum          | 最大值   | 一个 JSON 数当 JSON 实例的值小于等于 maximum 的时候，通过验证               |
-| exclusiveMaximum | 包含最大值 | 布尔值，必须与 maximum 一起使用当其为 true 的时候，JSON 实例不能等于 maximum 的值 |
-| minimum          | 最小值   | 一个 JSON 数当 JSON 实例的值大于等于 minimum 的时候，通过验证               |
-| exclusiveMinimum | 包含最小值 | 布尔值，必须与 minimum 一起使用当其为 true 的时候，JSON 实例不能等于 minimum 的值 |
+| 关键字              | 描述    | Schema 有效值           | json 数据验证                           |
+|------------------|-------|----------------------|-------------------------------------|
+| multipleOf       | 整数倍   | 大于 0 的 JSON 数        | 当 JSON 实例的值是其整数倍的时候，通过验证            | 
+| maximum          | 最大值   | 一个 JSON 数            | 当 JSON 实例的值小于等于 maximum 的时候，通过验证    |
+| exclusiveMaximum | 包含最大值 | 布尔值，必须与 maximum 一起使用 | 当其为 true 的时候，JSON 实例不能等于 maximum 的值 |
+| minimum          | 最小值   | 一个 JSON 数            | 当 JSON 实例的值大于等于 minimum 的时候，通过验证    |
+| exclusiveMinimum | 包含最小值 | 布尔值，必须与 minimum 一起使用 | 当其为 true 的时候，JSON 实例不能等于 minimum 的值 |
 
 ### array
 
-| 关键字             | 描述    | Schema 有效值                              | json 数据验证                                                                                                                                           |
-|-----------------|-------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| items           | 定义元素  | 必须是 Schema 实例对象或者 Schema 实例对象的数组        | 用于定义 array 中的元素类型                                                                                                                                   |
-| additionalItems | 额外项校验 | 布尔值或 Schema 实例对象                        | 当 items 为 Schema 实例的数组，additionalItems 为 false 时，json 数据长度必须小于等于 items 长度，如果 additionalItems 是 Schema 实例，则 items 关键字指定的 Schema实例数组没有匹配到的其他元素都要符合该实例 |
-| maxItems        | 长度限制  | 大于等于 0 的整数array 实例的长度必须小于等于 maxItems 的值 |
-| minItems        | 长度限制  | 大于等于 0 的整数array 实例的长度必须大于等于 minItems 的值 |
-| uniqueItems     | 唯一值   | 布尔值，默认值 false                           | 当uniqueItems 为 true 的时候，array 实例不能有重复值。                                                                                                             |
+| 关键字             | 描述    | Schema 有效值                       | json 数据验证                                                                                                                                           |
+|-----------------|-------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| items           | 定义元素  | 必须是 Schema 实例对象或者 Schema 实例对象的数组 | 用于定义 array 中的元素类型                                                                                                                                   |
+| additionalItems | 额外项校验 | 布尔值或 Schema 实例对象                 | 当 items 为 Schema 实例的数组，additionalItems 为 false 时，json 数据长度必须小于等于 items 长度，如果 additionalItems 是 Schema 实例，则 items 关键字指定的 Schema实例数组没有匹配到的其他元素都要符合该实例 |
+| maxItems        | 长度限制  | 大于等于 0 的整数                       | array 实例的长度必须小于等于 maxItems 的值                                                                                                                       |
+| minItems        | 长度限制  | 大于等于 0 的整数                       | array 实例的长度必须大于等于 minItems 的值                                                                                                                       |
+| uniqueItems     | 唯一值   | 布尔值，默认值 false                    | 当uniqueItems 为 true 的时候，array 实例不能有重复值。                                                                                                             |
 
 ### object
 
-| 关键字                  | 描述     | Schema 有效值                                      | json 数据验证                                                                                     |
-|----------------------|--------|-------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| properties           | 属性     | 属性的值必须都是有效的 Schema 实例对象                         | 用于定义属性列表                                                                                      |
-| maxProperties        | 最大属性个数 | 大于等于0 的整数object 实例的属性个数必须小于等于 maxProperties 的值  |
-| minProperties        | 最小属性个数 | 大于等于 0 的整数object 实例的属性个数必须大于等于 minProperties 的值 |
-| required             | 必须属性   | 字符串数组，至少必须有一个元素，数组内不能有重复值                       | object 实例必须有所有 required 定义的属性                                                                 |
-| patternProperties    | 按属性名校验 | 必须是有效的 Scheme 实例对象                              | Scheme 实例的每一个属性的键都是一个正则表达式，值都是一个 Schema 实例。 指定符合正则表达式的属性的校验规则                                 |
-| additionalProperties | 额外属性校验 | Scheme 实例对象或布尔值                                 | 为 false 时不允许拥有除了 properties 和 patternProperties 匹配到的属性外的属性，如果为 Scheme 实例，则没有匹配到的属性要符合该 Scheme |
+| 关键字                  | 描述     | Schema 有效值                | json 数据验证                                                                                     |
+|----------------------|--------|---------------------------|-----------------------------------------------------------------------------------------------|
+| properties           | 属性     | 属性的值必须都是有效的 Schema 实例对象   | 用于定义属性列表                                                                                      |
+| maxProperties        | 最大属性个数 | 大于等于0 的整数                 | object 实例的属性个数必须小于等于 maxProperties 的值                                                         |
+| minProperties        | 最小属性个数 | 大于等于 0 的整数                | object 实例的属性个数必须大于等于 minProperties 的值                                                         |
+| required             | 必须属性   | 字符串数组，至少必须有一个元素，数组内不能有重复值 | object 实例必须有所有 required 定义的属性                                                                 |
+| patternProperties    | 按属性名校验 | 必须是有效的 Scheme 实例对象        | Scheme 实例的每一个属性的键都是一个正则表达式，值都是一个 Schema 实例。 指定符合正则表达式的属性的校验规则                                 |
+| additionalProperties | 额外属性校验 | Scheme 实例对象或布尔值           | 为 false 时不允许拥有除了 properties 和 patternProperties 匹配到的属性外的属性，如果为 Scheme 实例，则没有匹配到的属性要符合该 Scheme |
 
 ### 通用关键字
 
