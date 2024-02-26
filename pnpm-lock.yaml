@@ -30,8 +30,8 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0
   hexo-related-posts:
-    specifier: ^1.5.1
-    version: 1.5.1(chalk@4.1.2)(hexo@6.3.0)
+    specifier: ^1.5.2
+    version: 1.5.2(chalk@4.1.2)(hexo@6.3.0)
   hexo-renderer-ejs:
     specifier: ^2.0.0
     version: 2.0.0
@@ -735,11 +735,11 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /hexo-related-posts@1.5.1(chalk@4.1.2)(hexo@6.3.0):
-    resolution: {integrity: sha512-KeNGQXcfsDKGyP66wiUVlcqguMyBn0n9tsFE5CftxhD9jiOrCmsqCibY1Aq8w/9f92+uxl+NlNkFhkrLezRFVg==}
+  /hexo-related-posts@1.5.2(chalk@4.1.2)(hexo@6.3.0):
+    resolution: {integrity: sha512-IXGTMp6r1AT6rBS4vsWwcnVQ6tPmMA4cju5ldcske6zs7ff9SdqQ6t05UHBJWjyK45NtNu5V5IsqG4o+lzjJ1w==}
     peerDependencies:
       chalk: ^4.1.0
-      hexo: ^4.2.0 || ^5.2.0 || ^6.3.0
+      hexo: ^4.2.0 || ^5.2.0 || ^6.3.0 || ^7.1.1
     dependencies:
       chalk: 4.1.2
       hexo: 6.3.0
